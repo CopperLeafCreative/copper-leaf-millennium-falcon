@@ -1,0 +1,56 @@
+.gform_next_button {
+  background: #1e7ac4;
+}
+
+button, .button {
+  cursor: pointer;
+}
+
+.gform_page_footer.top_label {
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.content.post-733 {
+    max-width: 700px;
+    margin: 40px auto;
+} 
+
+input#gform_next_button_6_15 {
+    order: 1;
+}
+
+input#gform_submit_button_6 {
+    width: 300px !important;
+    order: 1;
+}
+
+.gform_save_link {
+    order: 3;
+    flex-basis: 100%;
+    text-align: left !important;
+}
+
+.gform_previous_button {
+    order: 2;
+}
+
+.gform_next_button:hover, 
+input#gform_submit_button_6:hover {
+    background: #0f9be5;
+}
+
+.content form input[type=submit], .content form button {
+    color: white;
+}
+
+.form_saved_message {
+    margin-top: 40px;
+}
+
+
+input[type=tel], .content form input[type=email], .content form input[type=password], .content form .select2-choice, .content form select, .content form textarea {
+    color: #333;
+}

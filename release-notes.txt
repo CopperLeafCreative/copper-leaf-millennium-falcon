@@ -1,0 +1,32 @@
+
+Version 1.2.6 - 20220621
+-github PAT to db
+-fixed misspelling of millennium
+
+
+Version 1.2.5 - 20211207
+-Changed input text color from light gray to #333
+
+
+Version 1.2.4 - 20211207
+-Added filters to render shortcodes in Gravity Forms
+
+
+Version 1.2.3 - 20211201
+-Made shortcode die silently (as intended...)
+
+
+Version 1.2.2 - 20211201
+-Added client first name & email address to data passed
+
+
+Version 1.2.1 - 20211201
+-Tweaked output of company name to prepend Company:
+
+
+Version 0.3.0 - 20211102
+- Fatal Errors cleared from original handwritten code
+
+
+Version 0.1 - 20210928
+- Initial setup (based on hdonline)
