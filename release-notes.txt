@@ -1,4 +1,8 @@
 
+Version 1.2.7 - 20220720
+-update checker into an init func
+
+
 Version 1.2.6 - 20220621
 -github PAT to db
 -fixed misspelling of millennium

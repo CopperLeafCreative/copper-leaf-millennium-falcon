@@ -1,9 +1,9 @@
 <?php
 
 /*
-Plugin Name: Copper Leaf Creative: Millenium Falcon
+Plugin Name: Copper Leaf Creative: Millennium Falcon
 Description: For smuggling.  "Uh, everything is fine here. Situation Normal.  How are you?"
-Version: 1.2.5
+Version: 1.2.7
 Author: Copper Leaf Creative, Gordon Seirup
 Author URI: https://www.copperleafcreative.com
 License: GPLv2
@@ -31,26 +31,28 @@ if ( ! function_exists( 'add_action' ) ) {
 }
 
 
+add_action( 'init' , 'clc_plugin_update_checker_mill_fal');
+function clc_plugin_update_checker_mill_fal() {
 
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/CopperLeafCreative/copper-leaf-millennium-falcon',
-	__FILE__,
-	'copper-leaf-millennium-falcon'
-);
+    require 'plugin-update-checker/plugin-update-checker.php';
+    $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+        'https://github.com/CopperLeafCreative/copper-leaf-millennium-falcon',
+        __FILE__,
+        'copper-leaf-millennium-falcon'
+    );
 
-//Set the branch that contains the stable release.
-// $myUpdateChecker->setBranch('stable-branch-name');
+    //Set the branch that contains the stable release.
+    // $myUpdateChecker->setBranch('stable-branch-name');
 
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+    $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
-// get Personal Access Token from Copper Leaf Settings
-$github_personal_access_token = get_field( 'clcs_github_personal_access_token' , 'option' );
+    // get Personal Access Token from Copper Leaf Settings
+    $github_personal_access_token = get_field('clcs_github_personal_access_token', 'option');
 
-//Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication( $github_personal_access_token );
+    //Optional: If you're using a private repository, specify the access token like this:
+    $myUpdateChecker->setAuthentication($github_personal_access_token);
 
-
+}
 
 
 // Add custom stylesheet
